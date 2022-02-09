@@ -3,7 +3,7 @@
         "id": "aaaaa",
         "general": {
             "title": "むらさんスタンプ",
-            "shortDesc": "This is a test.",
+            "shortDesc": "初めてのLINEスタンプ。",
             "thumbnail": "https://mura32033.com/assets/img/works/stamp1.png",
             "tags": [
                 {
@@ -25,12 +25,65 @@
             },
             {
                 "src": "https://mura32033.com/assets/img/works/stamp1-1.png",
-                "alt": "スタンプ"
+                "alt": "スタンプサンプル-おはよう"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp1-2.png",
+                "alt": "スタンプサンプル-ありがとう"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp1-3.png",
+                "alt": "スタンプサンプル-了解"
             }
         ],
         "link": [
             {
                 "url": "https://store.line.me/stickershop/product/8828980/ja",
+                "text": "LINE Store"
+            }
+        ],
+        "createdOn": "2022-01-01"
+    },
+    {
+        "id": "aaaaa",
+        "general": {
+            "title": "むらさんスタンプ2",
+            "shortDesc": "LINEスタンプ第2弾。",
+            "thumbnail": "https://mura32033.com/assets/img/works/stamp2.png",
+            "tags": [
+                {
+                    "name": "LINEスタンプ",
+                    "class": "lineStamp"
+                }
+            ]
+        },
+        "desc": [
+            {
+                "header": null,
+                "content": "LINE第2弾スタンプです。少しふざけた感じのものが多めです。40個のスタンプで120円です。"
+            }
+        ],
+        "img": [
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp2.png",
+                "alt": "スタンプロゴ"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp2-1.png",
+                "alt": "誕生日おめでとうスタンプ"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp2-2.png",
+                "alt": "草スタンプ"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp2-3.png",
+                "alt": "何もしてないのに壊れたスタンプ"
+            }
+        ],
+        "link": [
+            {
+                "url": "https://store.line.me/stickershop/product/10848597/ja",
                 "text": "LINE Store"
             }
         ],
@@ -113,45 +166,40 @@
             }
         ],
         "createdOn": "2022-01-01"
-    }
-    ,
+    },
     {
-        "id": "dddd",
+        "id": "ddddd",
         "general": {
-            "title": "テキスト整形アプリ",
-            "shortDesc": "余計なスペースや改行を除去し、翻訳サイトに簡単に遷移できます。",
-            "thumbnail": "https://mura32033.com/assets/img/works/textformatter_1.png",
+            "title": "第20回静大祭in浜松公式ウェブサイト",
+            "shortDesc": "初めていろいろな方に見てもらえたサイトです。",
+            "thumbnail": "https://mura32033.com/assets/img/works/daisaihp_1.png",
             "tags": [
                 {
-                    "name": "JavaScript",
-                    "class": "js"
+                    "name": "HTML",
+                    "class": "html"
+                },
+                {
+                    "name": "CSS",
+                    "class": "css"
                 }
             ]
         },
         "desc": [
             {
                 "header": null,
-                "content": "PDFから英文を選択してペーストすると余計なスペースや改行が生まれるので、それらを除去したうえで簡単に翻訳サイトに転送できるようなアプリです。単語の途中で改行され「-」が付いている場合にもそれを除去してくれるようにしました。"
-            },
-            {
-                "header": "使用技術",
-                "content": "HTML、Javascriptを使用しています。CSSフレームワークとして最終的にTailwind CSSを採用しました。"
+                "content": "浜松静大祭実行委員会に所属していたときに大学祭公式サイトを制作しました。"
             }
         ],
         "img": [
             {
-                "src": "https://mura32033.com/assets/img/works/textformatter_1.png",
-                "alt": "スタンプロゴ"
+                "src": "https://mura32033.com/assets/img/works/daisaihp_1.png",
+                "alt": "スクリーンショット"
             }
         ],
         "link": [
             {
-                "url": "https://mura32033.com/toolbox/tools/textformatter/",
-                "text": "Text Formatter"
-            },
-            {
-                "url": "https://github.com/mura32033/text-formatter",
-                "text": "GitHub"
+                "url": "https://hama-shizudaisai.com/20",
+                "text": "第20回静大祭in浜松"
             }
         ],
         "createdOn": "2022-01-01"
@@ -159,40 +207,97 @@
     {
         "id": "eeeee",
         "general": {
-            "title": "テキスト整形アプリ",
-            "shortDesc": "余計なスペースや改行を除去し、翻訳サイトに簡単に遷移できます。",
-            "thumbnail": "https://mura32033.com/assets/img/works/textformatter_1.png",
+            "title": "体温記録くん",
+            "shortDesc": "体温を記録する必要が出てきたので作ってみました。",
+            "thumbnail": "https://mura32033.com/assets/img/works/feverrecord_1.jpg",
             "tags": [
                 {
-                    "name": "JavaScript",
-                    "class": "js"
+                    "name": "PHP",
+                    "class": "php"
+                },
+                {
+                    "name": "Laravel",
+                    "class": "laravel"
                 }
             ]
         },
         "desc": [
             {
                 "header": null,
-                "content": "PDFから英文を選択してペーストすると余計なスペースや改行が生まれるので、それらを除去したうえで簡単に翻訳サイトに転送できるようなアプリです。単語の途中で改行され「-」が付いている場合にもそれを除去してくれるようにしました。"
-            },
-            {
-                "header": "使用技術",
-                "content": "HTML、Javascriptを使用しています。CSSフレームワークとして最終的にTailwind CSSを採用しました。"
+                "content": "Laravelを使って体温を簡単に記録できるようにしました。記録したデータをグラフ表示するためにChart.jsを使っています。"
             }
         ],
         "img": [
             {
-                "src": "https://mura32033.com/assets/img/works/textformatter_1.png",
-                "alt": "スタンプロゴ"
+                "src": "https://mura32033.com/assets/img/works/feverrecord_1.jpg",
+                "alt": "ログイン画面のスクリーンショット"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/feverrecord_2.jpg",
+                "alt": "グラフ表示中のスクリーンショット"
             }
         ],
         "link": [
             {
-                "url": "https://mura32033.com/toolbox/tools/textformatter/",
-                "text": "Text Formatter"
+                "url": null,
+                "text": null
+            }
+        ],
+        "createdOn": "2022-01-01"
+    },
+    {
+        "id": "ffffff",
+        "general": {
+            "title": "Flutterを使ったテキスト感情分析機能付きWeb/Android用チャットアプリ",
+            "shortDesc": "自由にアプリ開発を行う講義課題で作成しました。",
+            "thumbnail": "https://mura32033.com/assets/img/works/architecture.jpg",
+            "tags": [
+                {
+                    "name": "Dart",
+                    "class": "dart"
+                },
+                {
+                    "name": "Flutter",
+                    "class": "Flutter"
+                }
+            ]
+        },
+        "desc": [
+            {
+                "header": null,
+                "content": "講義課題としてFlutterを使ったチャットアプリを開発しました。チャット機能自体はとてもシンプルな機能しかありません。テキストと画像が送信できます。"
             },
             {
-                "url": "https://github.com/mura32033/text-formatter",
-                "text": "GitHub"
+                "header": "特徴",
+                "content": "特徴は、感情表現としてスタンプや顔文字を使用するのではなく、フォントを使っていることです。さらに、Google Cloud PlatformのNatural Language APIを通してSentiment Analysisのスコアを用いて自動感情分析・フォント選択をできるようにしました。"
+            },
+            {
+                "header": "使用技術",
+                "content": "Dart言語を使用しています。フレームワークとしてFlutterを採用しました。また、FirebaseやGoogle Cloud Platformとの連携にAPIを導入しています。"
+            }
+        ],
+        "img": [
+            {
+                "src": "https://mura32033.com/assets/img/works/architecture.jpg",
+                "alt": "アプリのアーキテクチャ"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/chatapp_1.jpg",
+                "alt": "チャットアプリ起動画面のスクリーンショット"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/chatapp_2.jpg",
+                "alt": "トークルーム一覧画面のスクリーンショット"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/chatapp_3.jpg",
+                "alt": "トーク画面のスクリーンショット"
+            }
+        ],
+        "link": [
+            {
+                "url": "https://github.com/mura32033/flutter_chatapp",
+                "text": "flutter_chatapp"
             }
         ],
         "createdOn": "2022-01-01"
