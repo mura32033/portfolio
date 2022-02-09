@@ -1,10 +1,12 @@
 <template>
-<div>
+<div class="container">
     <header>
-        <h1><NuxtLink to="/">むらさん</NuxtLink></h1>
+        <div class="logo">
+            <h1><NuxtLink to="/">むらさん</NuxtLink></h1>
+        </div>
         <Navmenu />
     </header>
-    <Nuxt />
+    <Nuxt class="content" />
     <div class="footer">
         <footer>
             <span>2022 murasan.</span>
@@ -16,6 +18,8 @@
 <style lang="scss">
 $primary: #333;
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     line-height: 1.5;
     h1 {
@@ -31,6 +35,7 @@ body {
         font-size: 1.25rem;
     }
     width: 100%;
+    min-height: 100vh;
 }
 header {
     display: flex;
@@ -42,6 +47,18 @@ a.nuxt-link-active {
 }
 a.nuxt-link-exact-active {
   color: #00c58e;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 2rem auto;
+    width: 75%;
 }
 .footer {
     align-items: center;
