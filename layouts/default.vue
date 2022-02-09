@@ -1,11 +1,9 @@
 <template>
 <div>
-    <div class="nav">
-        <NuxtLink v-scroll-to="'#about'" to>About</NuxtLink>
-        <NuxtLink v-scroll-to="'#works'" to>Works</NuxtLink>
-        <NuxtLink v-scroll-to="'#contact'" to>Contact</NuxtLink>
-    </div>
-    <h1>むらさん</h1>
+    <header>
+        <h1><NuxtLink to="/">むらさん</NuxtLink></h1>
+        <Navmenu />
+    </header>
     <Nuxt />
     <div class="footer">
         <footer>
@@ -33,6 +31,17 @@ body {
         font-size: 1.25rem;
     }
     width: 100%;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+a.nuxt-link-active {
+  font-weight: bold;
+}
+a.nuxt-link-exact-active {
+  color: #00c58e;
 }
 .footer {
     align-items: center;
