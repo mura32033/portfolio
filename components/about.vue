@@ -6,17 +6,17 @@
             <dd>{{i.content}}</dd>
         </div>
         <h3>資格</h3>
-        <div class="infoDesc" v-for="(c, index) in getAbout.skill.certificate" :key="index">
+        <div class="certificateDesc" v-for="(c, index) in getAbout.skill.certificate" :key="index">
             <dt>{{c.title}}</dt>
             <dd>{{c.content}}</dd>
         </div>
         <h3>スキル</h3>
-        <div class="infoDesc" v-for="(s, index) in getAbout.skill.skill" :key="index">
+        <div class="skillDesc" v-for="(s, index) in getAbout.skill.skill" :key="index">
             <dt>{{s.title}}</dt>
             <dd>{{s.content}}</dd>
         </div>
         <h3>生い立ち</h3>
-        <div class="infoDesc" v-for="(h, index) in getAbout.history" :key="index">
+        <div class="historyDesc" v-for="(h, index) in getAbout.history" :key="index">
             <dt>{{h.title}}</dt>
             <dd>{{h.content}}</dd>
         </div>
@@ -35,11 +35,23 @@ export default {
 </script>
 
 <style lang="scss">
-.infoDesc {
+@mixin desc {
     display: flex;
     flex-direction: row;
-    > dt {
+    dt {
         width: max-content;
     }
+}
+.infoDesc {
+    @include desc;
+}
+.skillDesc {
+    @include desc;
+}
+.certificateDesc {
+    @include desc;
+}
+.historyDesc {
+    @include desc;
 }
 </style>
