@@ -1,16 +1,18 @@
 <template>
 <div id="works">
-    <h2>Works</h2>
-    <p>作ったものをご紹介します。</p>
-    <p>カードをクリックすると詳細をご確認いただけます。</p>
-    <div class="worksItemsGroup">
+    <section>
+        <h1>Works</h1>
+        <p>作ったものをご紹介します。</p>
+        <p>カードをクリックすると詳細をご確認いただけます。</p>
+    </section>
+    <section class="worksItemsGroup">
         <template v-for="(w, index) in getWorks">
             <work-item :key="index"
             class="worksCard"
             :style="{backgroundImage: 'url(' + w.general.thumbnail + ')'}"
             :item="w" />
         </template>
-    </div>
+    </section>
 </div>
 </template>
 
@@ -25,6 +27,11 @@ export default {
         ...mapGetters({
             getWorks: 'json/getWorks',
         }),
+    },
+    head() {
+        return{
+            title: "Works"
+        }
     }
 }
 </script>
