@@ -1,6 +1,17 @@
 <template>
     <div id="contact">
-        <h2>Contact</h2>
-        <span>How to reach me!</span>
+        <h1>Contact</h1>
+        <p>Hey</p>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'Contact',
+    head() {
+        return{
+            title: "Contact"
+        }
+    }
+}
+</script>
