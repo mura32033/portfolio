@@ -1,25 +1,40 @@
 <template>
     <div id="about">
-        <h2>紹介</h2>
-        <div class="infoDesc" v-for="(i, index) in getAbout.info" :key="index">
-            <dt>{{i.title}}</dt>
-            <dd>{{i.content}}</dd>
-        </div>
-        <h3>資格</h3>
-        <div class="certificateDesc" v-for="(c, index) in getAbout.skill.certificate" :key="index">
-            <dt>{{c.title}}</dt>
-            <dd>{{c.content}}</dd>
-        </div>
-        <h3>スキル</h3>
-        <div class="skillDesc" v-for="(s, index) in getAbout.skill.skill" :key="index">
-            <dt>{{s.title}}</dt>
-            <dd>{{s.content}}</dd>
-        </div>
-        <h3>生い立ち</h3>
-        <div class="historyDesc" v-for="(h, index) in getAbout.history" :key="index">
-            <dt>{{h.title}}</dt>
-            <dd>{{h.content}}</dd>
-        </div>
+        <section>
+           <h1>About</h1>
+            <div class="infoDesc" v-for="(i, index) in getAbout.info" :key="index">
+                <dt>{{i.title}}</dt>
+                <dd>{{i.content}}</dd>
+            </div> 
+        </section>
+        <section>
+            <h2>資格</h2>
+            <div class="certificateDesc" v-for="(c, index) in getAbout.skill.certificate" :key="index">
+                <dt>{{c.title}}</dt>
+                <dd>{{c.content}}</dd>
+            </div>
+        </section>
+        <section>
+            <h2>スキル</h2>
+            <div class="skillDesc" v-for="(s, index) in getAbout.skill.skill" :key="index">
+                <dt>{{s.title}}</dt>
+                <dd>{{s.content}}</dd>
+            </div>
+        </section>
+        <section>
+            <h2>受賞歴</h2>
+            <div class="skillDesc" v-for="(a, index) in getAbout.award" :key="index">
+                <dt>{{a.title}}</dt>
+                <dd>{{a.content}} @{{a.place}}</dd>
+            </div>
+        </section>
+        <section>
+            <h2>生い立ち</h2>
+            <div class="historyDesc" v-for="(h, index) in getAbout.history" :key="index">
+                <dt>{{h.title}}</dt>
+                <dd>{{h.content}}</dd>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -30,6 +45,11 @@ export default {
         ...mapGetters({
             getAbout: 'json/getAbout',
         }),
+    },
+    head() {
+        return{
+            title: "About"
+        }
     }
 }
 </script>
@@ -38,12 +58,21 @@ export default {
 @mixin desc {
     display: flex;
     flex-direction: row;
+    margin-bottom: .5rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    dt, dd {
+        padding: .5rem 1rem;
+    }
     dt {
-        width: max-content;
+        background-color: #333;
+        color: white;
     }
 }
 .infoDesc {
     @include desc;
+    
 }
 .skillDesc {
     @include desc;
