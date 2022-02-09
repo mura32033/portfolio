@@ -1,8 +1,6 @@
 <template>
   <div class="wrapper">
-    <About />
-    <Works />
-    <Contact />
+    
   </div>
 </template>
 
