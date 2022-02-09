@@ -1,0 +1,200 @@
+[
+    {
+        "id": "aaaaa",
+        "general": {
+            "title": "むらさんスタンプ",
+            "shortDesc": "This is a test.",
+            "thumbnail": "https://mura32033.com/assets/img/works/stamp1.png",
+            "tags": [
+                {
+                    "name": "LINEスタンプ",
+                    "class": "lineStamp"
+                }
+            ]
+        },
+        "desc": [
+            {
+                "header": null,
+                "content": "LINEスタンプです。毎日いつでも使えるスタンプを目指して作りました。40個のスタンプで120円です。"
+            }
+        ],
+        "img": [
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp1.png",
+                "alt": "スタンプロゴ"
+            },
+            {
+                "src": "https://mura32033.com/assets/img/works/stamp1-1.png",
+                "alt": "スタンプ"
+            }
+        ],
+        "link": [
+            {
+                "url": "https://store.line.me/stickershop/product/8828980/ja",
+                "text": "LINE Store"
+            }
+        ],
+        "createdOn": "2022-01-01"
+    },
+    {
+        "id": "bbbb",
+        "general": {
+            "title": "単位習得情報計算機",
+            "shortDesc": "習得単位から卒業要件単位を満たすかチェックできるアプリです。",
+            "thumbnail": "https://mura32033.com/assets/img/works/unitcalc_1.png",
+            "tags": [
+                {
+                    "name": "PHP",
+                    "class": "php"
+                }
+            ]
+        },
+        "desc": [
+            {
+                "header": null,
+                "content": "2018年度入学の情報学部行動情報学科向け単位習得情報計算機です。PHPで実装しました。"
+            },
+            {
+                "header": "使用技術",
+                "content": "PHPを使用しました。一部スタイル適用のためにJavaScriptによる処理を行っています。"
+            }
+        ],
+        "img": [
+            {
+                "src": "https://mura32033.com/assets/img/works/unitcalc_1.png",
+                "alt": "スタンプロゴ"
+            }
+        ],
+        "link": [
+            {
+                "url": "https://mura32033.com/toolbox/tools/unit/unit-insert.php",
+                "text": "LINE Store"
+            }
+        ],
+        "createdOn": "2022-01-01"
+    },
+    {
+        "id": "ccccc",
+        "general": {
+            "title": "テキスト整形アプリ",
+            "shortDesc": "余計なスペースや改行を除去し、翻訳サイトに簡単に遷移できます。",
+            "thumbnail": "https://mura32033.com/assets/img/works/textformatter_1.png",
+            "tags": [
+                {
+                    "name": "JavaScript",
+                    "class": "js"
+                }
+            ]
+        },
+        "desc": [
+            {
+                "header": null,
+                "content": "PDFから英文を選択してペーストすると余計なスペースや改行が生まれるので、それらを除去したうえで簡単に翻訳サイトに転送できるようなアプリです。単語の途中で改行され「-」が付いている場合にもそれを除去してくれるようにしました。"
+            },
+            {
+                "header": "使用技術",
+                "content": "HTML、Javascriptを使用しています。CSSフレームワークとして最終的にTailwind CSSを採用しました。"
+            }
+        ],
+        "img": [
+            {
+                "src": "https://mura32033.com/assets/img/works/textformatter_1.png",
+                "alt": "スタンプロゴ"
+            }
+        ],
+        "link": [
+            {
+                "url": "https://mura32033.com/toolbox/tools/textformatter/",
+                "text": "Text Formatter"
+            },
+            {
+                "url": "https://github.com/mura32033/text-formatter",
+                "text": "GitHub"
+            }
+        ],
+        "createdOn": "2022-01-01"
+    }
+    ,
+    {
+        "id": "dddd",
+        "general": {
+            "title": "テキスト整形アプリ",
+            "shortDesc": "余計なスペースや改行を除去し、翻訳サイトに簡単に遷移できます。",
+            "thumbnail": "https://mura32033.com/assets/img/works/textformatter_1.png",
+            "tags": [
+                {
+                    "name": "JavaScript",
+                    "class": "js"
+                }
+            ]
+        },
+        "desc": [
+            {
+                "header": null,
+                "content": "PDFから英文を選択してペーストすると余計なスペースや改行が生まれるので、それらを除去したうえで簡単に翻訳サイトに転送できるようなアプリです。単語の途中で改行され「-」が付いている場合にもそれを除去してくれるようにしました。"
+            },
+            {
+                "header": "使用技術",
+                "content": "HTML、Javascriptを使用しています。CSSフレームワークとして最終的にTailwind CSSを採用しました。"
+            }
+        ],
+        "img": [
+            {
+                "src": "https://mura32033.com/assets/img/works/textformatter_1.png",
+                "alt": "スタンプロゴ"
+            }
+        ],
+        "link": [
+            {
+                "url": "https://mura32033.com/toolbox/tools/textformatter/",
+                "text": "Text Formatter"
+            },
+            {
+                "url": "https://github.com/mura32033/text-formatter",
+                "text": "GitHub"
+            }
+        ],
+        "createdOn": "2022-01-01"
+    },
+    {
+        "id": "eeeee",
+        "general": {
+            "title": "テキスト整形アプリ",
+            "shortDesc": "余計なスペースや改行を除去し、翻訳サイトに簡単に遷移できます。",
+            "thumbnail": "https://mura32033.com/assets/img/works/textformatter_1.png",
+            "tags": [
+                {
+                    "name": "JavaScript",
+                    "class": "js"
+                }
+            ]
+        },
+        "desc": [
+            {
+                "header": null,
+                "content": "PDFから英文を選択してペーストすると余計なスペースや改行が生まれるので、それらを除去したうえで簡単に翻訳サイトに転送できるようなアプリです。単語の途中で改行され「-」が付いている場合にもそれを除去してくれるようにしました。"
+            },
+            {
+                "header": "使用技術",
+                "content": "HTML、Javascriptを使用しています。CSSフレームワークとして最終的にTailwind CSSを採用しました。"
+            }
+        ],
+        "img": [
+            {
+                "src": "https://mura32033.com/assets/img/works/textformatter_1.png",
+                "alt": "スタンプロゴ"
+            }
+        ],
+        "link": [
+            {
+                "url": "https://mura32033.com/toolbox/tools/textformatter/",
+                "text": "Text Formatter"
+            },
+            {
+                "url": "https://github.com/mura32033/text-formatter",
+                "text": "GitHub"
+            }
+        ],
+        "createdOn": "2022-01-01"
+    }
+]
