@@ -1,7 +1,9 @@
 <template>
     <div id="contact">
-        <h1>Contact</h1>
-        <p>Hey</p>
+        <Pagetitle>
+            <template #title>Contact</template>
+            <template #desc><p>In preparation...</p></template>
+        </Pagetitle>
     </div>
 </template>
 
