@@ -1,8 +1,8 @@
 <template>
-<div class="container">
+<div class="default">
     <header>
         <div class="logo">
-            <h1><NuxtLink to="/">むらさん</NuxtLink></h1>
+            <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
         </div>
         <Navmenu />
     </header>
@@ -14,78 +14,18 @@
             <span>2022 murasan.</span>
         </footer>
     </div>
-</div>    
+</div>
 </template>
 
 <style lang="scss">
-$primary: #333;
-body {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    h1 {
-        font-size: 4rem;
-        font-weight: bold;
-        margin: 1rem 0;
-    }
-    h2 {
-        font-size: 3rem;
-        font-weight: bold;
-        margin: 3rem auto;
-        padding-bottom: 1rem;
-        position: relative;
-        &::after {
-            background-image: linear-gradient(to right, transparent, #333);
-            content: '';
-            display: block;
-            height: 1px;
-            position: absolute;
-            width: 100%;
-            right: 0;
-            bottom: 0;
-        }
-    }
-    h3 {
-        font-size: 2rem;
-        font-weight: bold;
-        margin: 2rem auto;
-        position: relative;
-    }
-    h4 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    width: 100%;
-    min-height: 100vh;
+.default {
+    @apply flex flex-col min-h-screen;
 }
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .nav {
-        align-items: center;
-        border-bottom: 4px solid rgba(51, 51, 51, .2);
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        justify-content: center;
-        margin: auto;
-        width: 90%;
-        a {
-            display: block;
-            padding: .5rem 2rem;
-            margin-bottom: -4px;
-            min-width: 64px;
-        }
+    @apply flex flex-col items-center;
+    h1 {
+        @apply text-6xl font-bold my-8;
     }
-}
-a.nuxt-link-active {
-    font-weight: bold;
-}
-a.nuxt-link-exact-active {
-    border-bottom: 4px solid#00c58e;
 }
 .move-enter {
     opacity: 0;
@@ -93,32 +33,25 @@ a.nuxt-link-exact-active {
 .move-enter-active {
     transition: opacity .3s ease;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 .content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 2rem auto;
-    width: 75%;
+    @apply flex flex-col flex-1 my-8 mx-auto w-11/12 md:w-3/4;
     section {
-        margin-bottom: 3rem;
-        &:last-child{
-            margin-bottom: 0;
-        }
+        @apply mb-12 last:mb-0;
+    }
+    h1 {
+        @apply text-5xl font-bold;
+    }
+    h2 {
+        @apply text-4xl font-bold my-8;
+    }
+    h3 {
+        @apply text-2xl font-bold my-6;
     }
 }
 .footer {
-    align-items: center;
-    background-color: $primary;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 4rem;
-    justify-content: center;
-    letter-spacing: 2.5px;
+    @apply flex flex-col items-center bg-slate-700 text-white h-16 justify-center tracking-wider;
+}
+.card {
+    @apply flex flex-col items-center p-4 border border-teal-200 shadow-lg rounded-xl;
 }
 </style>
