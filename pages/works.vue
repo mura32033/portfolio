@@ -1,10 +1,12 @@
 <template>
 <div id="works">
-    <section>
-        <h1>Works</h1>
-        <p>作ったものをご紹介します。</p>
-        <p>カードをクリックすると詳細をご確認いただけます。</p>
-    </section>
+    <Pagetitle>
+        <template #title>Works</template>
+        <template #desc>
+            <p>作ったものをご紹介します。</p>
+            <p>カードをクリックすると詳細をご確認いただけます。</p>
+        </template>
+    </Pagetitle>
     <section class="worksItemsGroup">
         <template v-for="(w, index) in getWorks">
             <work-item :key="index"
@@ -38,21 +40,9 @@ export default {
 
 <style lang="scss" scoped>
 .worksItemsGroup {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    justify-content: space-between;
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between;
 }
 .worksCard {
-    background: center / contain no-repeat;
-    background-color: rgba(255, 255, 255, .9);
-    background-blend-mode: lighten;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    margin: auto;
-    padding: 10px;
-    width: 100%;
+    @apply flex flex-row bg-center bg-contain bg-no-repeat bg-[rgba(255,255,255,.9)] bg-blend-lighten rounded-lg h-full m-auto p-2 w-full hover:shadow-md;
 }
 </style>
