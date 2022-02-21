@@ -1,6 +1,6 @@
 [
     {
-        "id": "aaaaa",
+        "id": "murastamp1",
         "general": {
             "title": "むらさんスタンプ",
             "shortDesc": "初めてのLINEスタンプ。",
@@ -45,7 +45,7 @@
         "createdOn": "2022-01-01"
     },
     {
-        "id": "aaaaa",
+        "id": "murastamp2",
         "general": {
             "title": "むらさんスタンプ2",
             "shortDesc": "LINEスタンプ第2弾。",

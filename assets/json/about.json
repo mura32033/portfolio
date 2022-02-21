@@ -11,9 +11,21 @@
     },
     "award": [
         {
-            "title": "2020年12月",
-            "content": "ジュニア部門最優秀発表賞（題目: 睡眠は起床時の気分に影響するのか―パイロットスタディ）",
-            "place": "静岡大学情報学部情報学シンポジウム2020"
+            "title": "ジュニア部門最優秀発表賞",
+            "content": "題目: 睡眠は起床時の気分に影響するのか―パイロットスタディ",
+            "detail": {
+                "date": "2020年12月",
+                "place": "静岡大学情報学部情報学シンポジウム2020"
+            }
+        }
+    ],
+    "present": [
+        {
+            "title": "Does sleep affect morning mood? - Pilot study",
+            "detail": {
+                "date": "2021年7月",
+                "place": "The 32nd International Congress of Psychology"
+            }
         }
     ],
     "skill": {
@@ -31,11 +43,11 @@
                 "content": "2015年第3回取得"
             },
             {
-                "title": "TOEIC(IP) スコア935",
+                "title": "TOEIC(IP; L&R)スコア935",
                 "content": "2018年8月取得"
             },
             {
-                "title": "TOEIC公開テスト(L&R) スコア940",
+                "title": "TOEIC(公開; L&R)スコア940",
                 "content": "2020年12月取得"
             }
         ],
