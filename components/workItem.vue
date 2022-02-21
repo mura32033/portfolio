@@ -1,5 +1,5 @@
 <template>
-    <div :class="{itemHover: isHovered}" @mouseover="hoverin" @mouseleave="hoverout" @click="show(item.id)">
+    <div @click="show(item.id)">
         <div class="cardContent">
             <div class="cardInfo">
                 <h3>{{item.general.title}}</h3>
@@ -22,21 +22,10 @@
 import worksItem from './worksItem.vue'
 export default {
   components: { worksItem },
-    data() {
-        return{
-            isHovered: false
-        }
-    },
     props: {
         item: Object
     },
     methods: {
-        hoverin() {
-            this.isHovered = true
-        },
-        hoverout() {
-            this.isHovered = false
-        },
         show(id) {
             this.$modal.show(id)
         },
@@ -48,26 +37,16 @@ export default {
 </script>
 
 <style lang="scss">
-.itemHover {
-    box-shadow: 1px 2px 11px -8px rgba(51, 51, 51, .7);
-}
 .cardContent {
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 10px;
-    width: 100%;
+    @apply flex flex-col h-full w-full p-2 rounded-lg;
     .cardInfo {
-        padding-bottom: 1rem;
+        @apply pb-4;
         > span {
-            font-size: .8rem;
-            display: block;
-            text-align: right;
+            @apply block text-sm text-right;
         }
     }
     > p {
-        margin-top: auto;
+        @apply mt-auto;
     }
 }
 </style>

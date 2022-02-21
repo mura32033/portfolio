@@ -12,7 +12,16 @@
             </div>
             <div class="imageGroup">
                 <template v-if="works.img != null">
-                    <img class="image-thumbnail" v-for="(i, index) in works.img" :key="index" v-bind:src="i.src" v-bind:alt="i.alt">
+                    <carousel
+                     :per-page="1"
+                     :autoplay="true"
+                     :autoplayTimeout="6000"
+                     :autoplayHoverPause="true" 
+                     :loop="true">
+                        <slide v-for="(i, index) in works.img" :key="index">
+                            <img class="image-thumbnail" v-bind:src="i.src" v-bind:alt="i.alt">
+                        </slide>
+                    </carousel>
                 </template>
                 <template v-else>
                     <span>No image available.</span>
@@ -20,7 +29,7 @@
             </div>
             <div class="linkGroup">
                 <template v-if="works.link != null">
-                    <a class="linkItem" v-for="(l, index) in works.link" :key="index" v-bind:href="l.url" target="_blank">{{l.text}}</a>
+                    外部リンク: <a class="linkItem" v-for="(l, index) in works.link" :key="index" v-bind:href="l.url" target="_blank">{{l.text}}</a>
                 </template>
                 <template v-else>
                     <span>No link available.</span>
@@ -31,9 +40,16 @@
 </template>
 
 <script>
+import Carousel from 'vue-carousel/src/Carousel.vue'
+import Slide from 'vue-carousel/src/Slide.vue'
+
 export default {
     props: {
         works: Object
+    },
+    components: {
+        Carousel,
+        Slide
     }
 }
 </script>
@@ -48,5 +64,21 @@ export default {
     align-items: center;
     display: flex;
     flex-direction: row;
+}
+.linkItem {
+    text-decoration: underline;
+}
+.VueCarousel-wrapper {
+    height: 500px;
+    .VueCarousel-inner {
+        height: 100%!important;
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.VueCarousel-slide {
+    @apply flex items-center justify-center;
 }
 </style>
