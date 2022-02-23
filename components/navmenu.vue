@@ -9,12 +9,12 @@
 
 <style lang="scss">
 .nav {
-    @apply hidden md:flex flex-row items-center border-b-4 border-b-emerald-400 border-solid gap-12 justify-center m-auto w-11/12;
+    @apply md:flex flex-col md:flex-row items-center md:border-b-4 md:border-b-emerald-400 md:border-solid md:gap-12 justify-center m-auto w-full md:w-11/12;
     a {
-        @apply block py-2 px-8 -mb-1 hover:rounded-t-md hover:bg-emerald-400 hover:font-bold;
+        @apply block py-2 px-8 md:-mb-1 md:hover:rounded-t-md md:hover:bg-emerald-400 md:hover:font-bold;
         min-width: 64px;
         &.nuxt-link-active {
-            @apply font-bold rounded-t-md bg-emerald-400;
+            @apply font-bold rounded-tr-full rounded-br-full md:rounded-t-md md:rounded-tr-none md:rounded-br-none bg-emerald-400;
         }
     }
 }

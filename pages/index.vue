@@ -32,7 +32,7 @@ export default {
 #index {
   > section{
     .profileImg {
-      @apply mr-0 md:mr-20 object-cover max-w-sm;
+      @apply mr-0 md:mr-20 object-cover max-w-full sm:max-w-xs lg:max-w-sm;
     }
     .sectionContent {
       @apply flex flex-col md:flex-row items-center justify-center;

@@ -15,12 +15,16 @@ export default {
 
 <style lang="scss">
 .infoDesc {
-    @apply flex flex-row mb-2 last:mb-0;
+    @apply flex flex-row items-center mb-2 last:mb-0;
     dt, dd {
-        @apply py-2 px-4 rounded;
+        @apply rounded;
     }
     dt {
-        @apply bg-teal-600 text-white;
+        @apply py-2 px-4 bg-teal-600 text-white;
+        word-break: keep-all;
+    }
+    dd {
+        @apply ml-4
     }
 }
 </style>
