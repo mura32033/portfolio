@@ -17,3 +17,5 @@ function murasan() {
 This is a note
 
 ---
+
+[リンク](https://jun-app.com/series/nuxt-content-blog/1)
