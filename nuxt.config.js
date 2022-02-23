@@ -68,7 +68,8 @@ export default {
       const files = await $content().only(['path']).fetch()
 
       return files.map(file => file.path === '/index' ? '/' : file.path)
-    }
+    },
+    fallback: true
   }
 
 }
