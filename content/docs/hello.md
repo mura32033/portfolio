@@ -10,3 +10,10 @@ function murasan() {
     console.log(name);
 }
 ```
+
+---
+**NOTE**
+
+This is a note
+
+---
