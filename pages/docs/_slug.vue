@@ -36,6 +36,23 @@ export default {
         formatDate(date) {
             return dayjs(date).format('YYYY年MM月DD日 HH:mm:ss')
         }
+    },
+    head() {
+        return {
+            title: `${this.page.title} | むらさん`,
+            meta: [
+                {
+                    hid: 'og:title',
+                    name: 'og:title',
+                    content: `${this.page.title} | むらさん`
+                },
+                {
+                    hid: 'og:url',
+                    name: 'og:url',
+                    content: `https://mura32033.com${this.page.path}`
+                }
+            ]
+        }
     }
 }
 </script>
