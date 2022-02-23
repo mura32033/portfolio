@@ -61,11 +61,17 @@ export default {
   },
 
   generate: {
+    /*async ready() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content().only(['slug']).fetch()
+
+      console.log(files)
+    },*/
     async routes() {
       const { $content } = require('@nuxt/content')
-      const files = await $content().only(['path']).fetch()
+      const files = await $content({ deep: true }).only(['path']).fetch()
 
-      return files.map(file => file.path === '/index' ? '/' : file.path)
+      return files.map((file) => (file.path === '/index' ? '/' : file.path))
     },
     fallback: true
   }
