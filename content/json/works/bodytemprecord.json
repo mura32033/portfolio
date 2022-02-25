@@ -1,0 +1,36 @@
+{
+    "id": "bodytemprecord",
+    "general": {
+      "title": "体温記録くん",
+      "shortDesc": "体温を記録する必要が出てきたので作ってみました。",
+      "thumbnail": "https://mura32033.com/assets/img/works/feverrecord_1.jpg",
+      "tags": [
+        {
+          "name": "PHP",
+          "class": "php"
+        },
+        {
+          "name": "Laravel",
+          "class": "laravel"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "Laravelを使って体温を簡単に記録できるようにしました。記録したデータをグラフ表示するためにChart.jsを使っています。"
+      }
+    ],
+    "img": [
+      {
+        "src": "https://mura32033.com/assets/img/works/feverrecord_1.jpg",
+        "alt": "ログイン画面のスクリーンショット"
+      },
+      {
+        "src": "https://mura32033.com/assets/img/works/feverrecord_2.jpg",
+        "alt": "グラフ表示中のスクリーンショット"
+      }
+    ],
+    "link": null,
+    "createdAt": "2021-04-06T00:55:50.000+09:00"
+  }

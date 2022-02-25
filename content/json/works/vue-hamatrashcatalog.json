@@ -1,0 +1,46 @@
+{
+    "id": "vue-hamatrashcatalog",
+    "general": {
+      "title": "浜松市ゴミカタログ",
+      "shortDesc": "Vue.jsの勉強を兼ねて、自治体オープンデータを用いたアプリを作ってみました。",
+      "thumbnail": "https://mura32033.com/assets/img/works/hama-trash_1.png",
+      "tags": [
+        {
+          "name": "JavaScript",
+          "class": "js"
+        },
+        {
+          "name": "Vue",
+          "class": "vue"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "浜松市公式ウェブサイトの連絡ゴミ一覧が本当にただ一覧表示されているだけだったので、Vueの勉強も兼ねてキーワード検索が簡単にできるようにしました。オープンデータがCSV形式で提供されているため、JSON形式に変換してaxiosで読み込んでいます。"
+      },
+      {
+        "header": "使用技術",
+        "content": "HTMLとVue.jsを使用しました。CSSフレームワークはTailwind CSSを採用しました。"
+      },
+      {
+        "header": "著作権表示",
+        "content": "このアプリは以下の著作物を改変して利用しています。『分別区分一覧、浜松市、クリエイティブ・コモンズ・ライセンス 表示2.1(http://creativecommons.org/licenses/by/2.1/jp/)』"
+      }
+    ],
+    "img": [
+      {
+        "src": "https://mura32033.com/assets/img/works/hama-trash_1.png",
+        "alt": "浜松市ゴミカタログスクリーンショット"
+      }
+    ],
+    "link": [
+      {
+        "url": "https://mura32033.com/toolbox/hama_trash/",
+        "text": "浜松市ゴミカタログ",
+        "type": "link"
+      }
+    ],
+    "createdAt": "2021-04-06T01:00:24.000+09:00"
+  }

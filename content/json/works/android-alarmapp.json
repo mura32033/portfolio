@@ -1,0 +1,32 @@
+{
+    "id": "android-alarmapp",
+    "general": {
+      "title": "講義時間アラームアプリ",
+      "shortDesc": "講義課題でAndroidアプリを作りました。",
+      "thumbnail": "https://mura32033.com/assets/img/works/androidalarm_1.png",
+      "tags": [
+        {
+          "name": "Android",
+          "class": "android"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "講義課題として講義時間になったら通知してくれるAndroidアプリを開発しました。"
+      },
+      {
+        "header": "使用技術",
+        "content": "Javaを使用しています。"
+      }
+    ],
+    "img": [
+      {
+        "src": "https://mura32033.com/assets/img/works/androidalarm_1.png",
+        "alt": "アプリスクリーンショット"
+      }
+    ],
+    "link": null,
+    "createdAt": "2021-04-06T00:57:58.000+09:00"
+  }

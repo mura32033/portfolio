@@ -1,0 +1,38 @@
+{
+    "id": "hamadaisai",
+    "general": {
+      "title": "第20回静大祭in浜松公式ウェブサイト",
+      "shortDesc": "初めていろいろな方に見てもらえたサイトです。",
+      "thumbnail": "https://mura32033.com/assets/img/works/daisaihp_1.png",
+      "tags": [
+        {
+          "name": "HTML",
+          "class": "html"
+        },
+        {
+          "name": "CSS",
+          "class": "css"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "浜松静大祭実行委員会に所属していたときに大学祭公式サイトを制作しました。"
+      }
+    ],
+    "img": [
+      {
+        "src": "https://mura32033.com/assets/img/works/daisaihp_1.png",
+        "alt": "スクリーンショット"
+      }
+    ],
+    "link": [
+      {
+        "url": "https://hama-shizudaisai.com/20",
+        "text": "第20回静大祭in浜松",
+        "type": "link"
+      }
+    ],
+    "createdAt": "2021-04-06T00:53:53.00+09:00"
+  }

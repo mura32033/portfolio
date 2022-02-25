@@ -1,0 +1,46 @@
+{
+    "id": "murastamp2",
+    "general": {
+        "title": "むらさんスタンプ2",
+        "shortDesc": "LINEスタンプ第2弾。",
+        "thumbnail": "https://mura32033.com/assets/img/works/stamp2.png",
+        "tags": [
+            {
+                "name": "LINEスタンプ",
+                "class": "lineStamp"
+            }
+        ]
+    },
+    "desc": [
+        {
+            "header": null,
+            "content": "LINE第2弾スタンプです。少しふざけた感じのものが多めです。40個のスタンプで120円です。"
+        }
+    ],
+    "img": [
+        {
+            "src": "https://mura32033.com/assets/img/works/stamp2.png",
+            "alt": "スタンプロゴ"
+        },
+        {
+            "src": "https://mura32033.com/assets/img/works/stamp2-1.png",
+            "alt": "誕生日おめでとうスタンプ"
+        },
+        {
+            "src": "https://mura32033.com/assets/img/works/stamp2-2.png",
+            "alt": "草スタンプ"
+        },
+        {
+            "src": "https://mura32033.com/assets/img/works/stamp2-3.png",
+            "alt": "何もしてないのに壊れたスタンプ"
+        }
+    ],
+    "link": [
+        {
+            "url": "https://store.line.me/stickershop/product/10848597/ja",
+            "text": "LINE Store",
+            "type": "link"
+        }
+    ],
+    "createdAt": "2021-04-06T00:49:23.000+09:00"
+}

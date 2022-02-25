@@ -1,0 +1,58 @@
+{
+    "id": "flutter-chatapp",
+    "general": {
+      "title": "Flutterを使ったテキスト感情分析機能付きWeb/Android用チャットアプリ",
+      "shortDesc": "自由にアプリ開発を行う講義課題で作成しました。",
+      "thumbnail": "https://mura32033.com/assets/img/works/architecture.jpg",
+      "tags": [
+        {
+          "name": "Dart",
+          "class": "dart"
+        },
+        {
+          "name": "Flutter",
+          "class": "Flutter"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "講義課題としてFlutterを使ったチャットアプリを開発しました。チャット機能自体はとてもシンプルな機能しかありません。テキストと画像が送信できます。"
+      },
+      {
+        "header": "特徴",
+        "content": "特徴は、感情表現としてスタンプや顔文字を使用するのではなく、フォントを使っていることです。さらに、Google Cloud PlatformのNatural Language APIを通してSentiment Analysisのスコアを用いて自動感情分析・フォント選択をできるようにしました。"
+      },
+      {
+        "header": "使用技術",
+        "content": "Dart言語を使用しています。フレームワークとしてFlutterを採用しました。また、FirebaseやGoogle Cloud Platformとの連携にAPIを導入しています。"
+      }
+    ],
+    "img": [
+      {
+        "src": "https://mura32033.com/assets/img/works/architecture.jpg",
+        "alt": "アプリのアーキテクチャ"
+      },
+      {
+        "src": "https://mura32033.com/assets/img/works/chatapp_1.jpg",
+        "alt": "チャットアプリ起動画面のスクリーンショット"
+      },
+      {
+        "src": "https://mura32033.com/assets/img/works/chatapp_2.jpg",
+        "alt": "トークルーム一覧画面のスクリーンショット"
+      },
+      {
+        "src": "https://mura32033.com/assets/img/works/chatapp_3.jpg",
+        "alt": "トーク画面のスクリーンショット"
+      }
+    ],
+    "link": [
+      {
+        "url": "https://github.com/mura32033/flutter_chatapp",
+        "text": "flutter_chatapp",
+        "type": "github"
+      }
+    ],
+    "createdAt": "2021-04-06T00:57:20.000+09:00"
+  }

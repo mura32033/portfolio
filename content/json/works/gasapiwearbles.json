@@ -1,0 +1,27 @@
+{
+    "id": "gasapiwearables",
+    "general": {
+      "title": "ウェアラブルデバイスのデータを定期取得",
+      "shortDesc": "複数のデバイスのデータを比較しやすくするために一元管理させるアプリです。",
+      "thumbnail": null,
+      "tags": [
+        {
+          "name": "GAS",
+          "class": "gas"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "複数のウェアラブルデバイスを使用しているため、容易にデバイス間の比較ができないことがこのプログラムを作るきっかけとなりました。それぞれのデータを自動取得できるようにGASを使い、Google Spreadsheetにデータを自動格納させました。使用しているデバイスはFitbit、Withings Sleep、Oura Ringです。それぞれのAPIキーを取得し、各デバイスごとのスプレッドシートに保存されるようにしました。Javascriptをベースにしていることもありかなりとっつきやすくスピーディーに開発をすすめることができました。"
+      },
+      {
+        "header": "使用技術",
+        "content": "Google Apps Script(GAS)を使用しています。データは午後0時から1時のタイムトリガーで各デバイスのAPIを通して取得し、必要なデータのみをGoogle Spreadsheetに保存させています。"
+      }
+    ],
+    "img": null,
+    "link": null,
+    "createdAt": "2021-08-08T19:14:48.000+09:00"
+  }

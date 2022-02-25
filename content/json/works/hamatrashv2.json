@@ -1,0 +1,50 @@
+{
+    "id": "hamatrashv2",
+    "general": {
+      "title": "浜松市ごみ分別品目検索",
+      "shortDesc": "以前作ったものを改良しました。",
+      "thumbnail": "",
+      "tags": [
+        {
+          "name": "JavaScript",
+          "class": "js"
+        },
+        {
+          "name": "Vue",
+          "class": "vue"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "浜松市からオープンデータがJSON形式で公開されており、データの自動取得が容易になったため以前のものを一から作り直してみました。リアルタイム検索でサーバに負荷をかけないようにするため、また、定期取得したマスターデータを用意するため、浜松市のJSONファイルを一旦Google Spreadsheetに保存し、そのシートをGASを通してVueで処理して表示させています。"
+      },
+      {
+        "header": "使用技術",
+        "content": "HTMLとVue.jsを使用しました。JSONの取得とSpreadsheetへの保存、JSON形式での配信はGoogle Apps Scriptを用いました。今回はCSSフレームワークを使わず自作しました。"
+      },
+      {
+        "header": "著作権表示",
+        "content": "このアプリは以下の著作物を改変して利用しています。『分別区分一覧、浜松市、クリエイティブ・コモンズ・ライセンス 表示2.1(http://creativecommons.org/licenses/by/2.1/jp/)』"
+      }
+    ],
+    "img": [
+      {
+        "src": "https://mura32033.com/assets/img/works/hama_trash_v2_1.png",
+        "alt": "浜松市ごみ分別品目検索スクリーンショット"
+      },
+      {
+        "src": "https://mura32033.com/assets/img/works/hama_trash_v2_2.png",
+        "alt": "浜松市ごみ分別品目検索スクリーンショット"
+      }
+    ],
+    "link": [
+      {
+        "url": "https://mura32033.com/toolbox/hama_trash_v2/",
+        "text": "浜松市ごみ分別品目検索",
+        "type": "link"
+      }
+    ],
+    "createdAt": "2021-09-03T14:04:49.000+09:00"
+  }

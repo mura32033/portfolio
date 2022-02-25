@@ -1,0 +1,31 @@
+{
+    "id": "vue-bookshelf",
+    "general": {
+      "title": "Vue本棚アプリ",
+      "shortDesc": "Vueを使って本棚アプリを制作しました。",
+      "thumbnail": null,
+      "tags": [
+        {
+          "name": "JavaScript",
+          "class": "js"
+        },
+        {
+          "name": "Vue",
+          "class": "vue"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "Google Books APIを使って、書籍名やISBNを入力することで簡単に書籍登録ができるようにしました。同時にメモを保存できるようにしてあるので、感想や気になったことを記録できます。データはFirebaseに保存されるようにしました。"
+      },
+      {
+        "header": "使用技術",
+        "content": "Vue.jsで実装しました。書籍情報の取得にはGoogle Books API、データの保存にはFirebaseを用いました。"
+      }
+    ],
+    "img": null,
+    "link": null,
+    "createdAt": "2021-04-06T00:59:37.000+09:00"
+  }

@@ -1,0 +1,43 @@
+{
+    "id": "sass-colorvariables",
+    "general": {
+      "title": "SASSカラー変数ジェネレータ",
+      "shortDesc": "カラー変数をSASS/SCSS用に変換します。",
+      "thumbnail": "https://mura32033.com/assets/img/works/sasscolorgene_1.png",
+      "tags": [
+        {
+          "name": "JavaScript",
+          "class": "js"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "SASS/SCSS使用時にカラーパレットを登録する際に、明度を10段階などに設定したパレットを簡単に変数形式に変換できるツールです。BootstrapやTailwind CSSなどのCSSフレームワークのように明度の違う色を用意したいときに使えます。"
+      },
+      {
+        "header": "使用技術",
+        "content": "HTML、Javascriptを使用しています。"
+      }
+    ],
+    "img": [
+      {
+        "src": "https://mura32033.com/assets/img/works/sasscolorgene_1.png",
+        "alt": "SASSカラージェネレータスクリーンショット"
+      }
+    ],
+    "link": [
+      {
+        "url": "https://mura32033.com/toolbox/tools/var.html",
+        "text": "SASSvariablegenerator",
+        "type": "link"
+      },
+      {
+        "url": "https://github.com/mura32033/SASSvariablegenerator",
+        "text": "SASSvariablegenerator",
+        "type": "github"
+      }
+    ],
+    "createdAt": "2021-04-06T00:59:03.000+09:00"
+  }

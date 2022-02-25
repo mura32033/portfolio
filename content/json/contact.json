@@ -1,0 +1,11 @@
+{
+    "mail": null,
+    "twitter": null,
+    "github": {
+        "title": "GitHub",
+        "content": {
+            "type": "link",
+            "url" : "https://github.com/mura32033"
+        }
+    }
+}
