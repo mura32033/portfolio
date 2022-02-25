@@ -1,7 +1,8 @@
 <template>
     <div class="infoDesc">
         <dt>{{data.title}}</dt>
-        <dd>{{data.content}} <template v-if="data.place">@{{data.place}}</template></dd>
+        <dd v-if="data.content.type == 'link'"><a :href="data.content.url">{{data.content.url}}</a></dd>
+        <dd v-else>{{data.content}} <template v-if="data.place">@{{data.place}}</template></dd>
     </div>
 </template>
 
