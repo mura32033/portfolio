@@ -1,11 +1,16 @@
 <template>
-    <article>
+    <article class="docsArticle">
+        <div class="flex flex-row items-center gap-4 mt-3">
+            <nuxt-link to="/docs" class="flex flex-row items-center"><span class="material-icons">arrow_back_ios</span>記事一覧</nuxt-link>
+            <span>/</span>
+            <span>{{ page.slug }}</span>
+        </div>
         <Pagetitle>
             <template #title>{{ page.title }}</template>
             <template #desc>
                 <section class="text-left text-sm text-slate-500 flex flex-col">
-                    <span>Created: {{ formatDate(page.createdAt) }}</span>
-                    <span>Updated: {{ formatDate(page.updatedAt) }}</span>
+                    <span class="flex flex-row items-center"><span class="material-icons ml-auto mr-2">schedule</span>{{ formatDate(page.createdAt) }}</span>
+                    <span class="flex flex-row items-center mt-2"><span class="material-icons ml-auto mr-2">update</span>{{ formatDate(page.updatedAt) }}</span>
                 </section>
             </template>
         </Pagetitle>
@@ -34,7 +39,7 @@ export default {
     },
     methods: {
         formatDate(date) {
-            return dayjs(date).format('YYYY年MM月DD日 HH:mm:ss')
+            return dayjs(date).format('YYYY/MM/DD HH:mm:ss')
         }
     },
     head() {
@@ -56,3 +61,23 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.docsArticle {
+    a.nuxt-link-active {
+        @apply hover:border-b-2 hover:border-b-teal-600;
+    }
+    .pagetitle h1 {
+        @apply mt-8;
+    }
+    .nuxt-content {
+        line-height: 2;
+        a {
+            text-decoration: underline;
+        }
+        h4 {
+            @apply text-xl font-bold my-6;
+        }
+    }
+}
+</style>
