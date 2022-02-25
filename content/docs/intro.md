@@ -2,11 +2,11 @@
 title: intro
 ---
 
-# Introduction
+## Introduction
 
 いろいろなことを書き残していくものです。
 
-# その他
+## その他
 
 いろんなCMSに挑戦。
 
