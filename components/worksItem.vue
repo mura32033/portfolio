@@ -16,7 +16,7 @@
                      :per-page="1"
                      :autoplay="true"
                      :autoplayTimeout="6000"
-                     :autoplayHoverPause="true" 
+                     :autoplayHoverPause="true"
                      :loop="true">
                         <slide v-for="(i, index) in works.img" :key="index">
                             <img class="image-thumbnail" v-bind:src="i.src" v-bind:alt="i.alt">
@@ -35,13 +35,14 @@
                     <span>No link available.</span>
                 </template>
             </div>
-            <span>{{works.createdOn}}</span>
+            <span>{{formatDate(works.createdOn)}}</span>
     </div>
 </template>
 
 <script>
 import Carousel from 'vue-carousel/src/Carousel.vue'
 import Slide from 'vue-carousel/src/Slide.vue'
+import dayjs from 'dayjs'
 
 export default {
     props: {
@@ -50,7 +51,17 @@ export default {
     components: {
         Carousel,
         Slide
-    }
+    },
+    mounted() {
+        dayjs.extend(require('dayjs/plugin/utc'))
+        dayjs.extend(require('dayjs/plugin/timezone'))
+        dayjs.tz.setDefault('Asia/Tokyo')
+    },
+    methods: {
+        formatDate(date) {
+            return dayjs(date).format('YYYY/MM/DD HH:mm:ss')
+        }
+    },
 }
 </script>
 
