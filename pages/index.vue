@@ -5,7 +5,8 @@
         <div class="sectionContent">
           <img class="profileImg" src="https://mura32033.com/assets/img/selfie.png" alt="selfie">
           <div class="contentGroup">
-            <Infodesc v-for="(i, index) in getAbout.info" :key="index" :data="i" />
+            <Infodesc :data="data.belongings" />
+            <Infodesc :data="data.born" />
           </div>
         </div>
     </section>
@@ -13,12 +14,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 export default {
-    computed: {
-        ...mapGetters({
-            getAbout: 'json/getAbout',
-        }),
+    async asyncData({ $content }) {
+      const data = await $content('json/info').fetch()
+      return { data }
     },
     head() {
         return{

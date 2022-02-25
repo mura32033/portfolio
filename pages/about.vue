@@ -3,44 +3,44 @@
         <Pagetitle>
             <template #title>About</template>
         </Pagetitle>
+
         <section>
             <h2>資格</h2>
             <div class="certificateCardGroup">
-                <Certificate v-for="(c, index) in getAbout.skill.certificate" :key="index" :data="c" />
+                <Certificate v-for="(c, index) in about.skill.certificate" :key="index" :data="c" />
             </div>
         </section>
         <section>
             <h2>スキル</h2>
             <div class="skillCardGroup">
-                <Skill v-for="(s, index) in getAbout.skill.skill" :key="index" :data="s" />
+                <Skill v-for="(s, index) in about.skill.skill" :key="index" :data="s" />
             </div>
         </section>
+
         <section>
             <h2>受賞歴</h2>
             <div class="awardCardGroup">
-                <Award v-for="(a, index) in getAbout.award" :key="index" :data="a" />
+                <Award v-for="(a, index) in about.award" :key="index" :data="a" />
             </div>
         </section>
         <section>
             <h2>発表歴</h2>
             <div class="presentCardGroup">
-                <Present v-for="(p, index) in getAbout.present" :key="index" :data="p" />
+                <Present v-for="(p, index) in about.present" :key="index" :data="p" />
             </div>
         </section>
         <section>
             <h2>生い立ち</h2>
-            <Infodesc v-for="(h, index) in getAbout.history" :key="index" :data="h" />
+            <Infodesc v-for="(h, index) in about.history" :key="index" :data="h" />
         </section>
     </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 export default {
-    computed: {
-        ...mapGetters({
-            getAbout: 'json/getAbout',
-        }),
+    async asyncData({ $content }) {
+        const about = await $content('json/about').fetch()
+        return { about }
     },
     head() {
         return{
