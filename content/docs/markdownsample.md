@@ -2,52 +2,36 @@
 title: markdown
 ---
 
-# いろいろ <Badge text="beta" type="warning"/> <Badge text="default theme"/>
+## いろいろ
 
 [GAS](gas)
 
-[[toc]]
-
-## foo
+### foo
 
 - Type: `string`
 - Default: `/`
 
-## bar
+### bar
 
 - Type: `string`
 - Default: `/`
 
-## Markdown formats
+### Markdown formats
 
-### Tip
-
-::: tip
-This is a tip
-:::
-
-::: warning
-This is a warning
-:::
-
-::: danger
-This is a dangerous warning
-:::
-
-### Table
+#### Table
 
 thだよ | thだよ
 --- | ---
 tdだよ | tdだよ
 td | td
 
-#### Table with line format
+##### Table with line format
 
 デフォルト | 左寄せにする | 中央寄せにする | 右寄せにする
 ---|:--- |:---:| ---:
 デフォルト | 左寄せ | 中央 | 右寄せ
 
-### Code block
+#### Code block
 
 ``` js
 export default {
@@ -59,23 +43,23 @@ export default {
 }
 ```
 
-### Link out
+#### Link out
 
 [リンクサンプル：GitHub](https://github.com/)
 
-### Quotation
+#### Quotation
 
 > 引用の
 >> 入れ子
 
-### List
+#### List
 
 1. A
 2. B
 
-### Emphasize and Italize
+#### Emphasize and Italize
 
 ***強調+イタリック***
 
-### Emoji
+#### Emoji
 :tada:
