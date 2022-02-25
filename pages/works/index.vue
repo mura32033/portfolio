@@ -8,27 +8,24 @@
         </template>
     </Pagetitle>
     <section class="worksItemsGroup">
-        <template v-for="(w, index) in getWorks">
-            <work-item :key="index"
+        <template v-for="p in page">
+            <work-item v-if="p.general.thumbnail" :key="p.slug"
             class="worksCard"
-            :style="{backgroundImage: 'url(' + w.general.thumbnail + ')'}"
-            :item="w" />
+            :style="{backgroundImage: 'url(' + p.general.thumbnail + ')'}"
+            :item="p" />
+            <work-item v-else :key="p.slug"
+            class="worksCard"
+            :item="p" />
         </template>
     </section>
 </div>
 </template>
 
 <script>
-import tagItem from '../components/tagItem.vue'
-import WorksItem from '../components//worksItem.vue'
-import { mapGetters } from 'vuex'
-
 export default {
-  components: { tagItem, WorksItem },
-    computed: {
-        ...mapGetters({
-            getWorks: 'json/getWorks',
-        }),
+    async asyncData({ $content }) {
+        const page = await $content('json/works').sortBy('createdAt', 'desc').fetch()
+        return { page }
     },
     head() {
         return{
