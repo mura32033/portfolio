@@ -19,7 +19,7 @@
 <script>
 export default {
     async asyncData ({ $content }) {
-        const list = await $content('docs', { deep: true }).only(['title', 'slug', 'path']).sortBy('createdAt', 'desc').fetch()
+        const list = await $content('docs', { deep: true }).only(['title', 'slug', 'path']).where({ isPublished: true }).sortBy('createdAt', 'desc').fetch()
         return {
             list
         }

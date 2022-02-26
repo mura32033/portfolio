@@ -1,5 +1,5 @@
 <template>
-    <article class="docsArticle">
+    <article class="docsArticle" v-if="page.isPublished">
         <div class="flex flex-row items-center gap-4 mt-3">
             <nuxt-link to="/docs" class="flex flex-row items-center"><span class="material-icons">arrow_back_ios</span>記事一覧</nuxt-link>
             <span>/</span>
@@ -16,6 +16,34 @@
         </Pagetitle>
         <section>
             <nuxt-content :document="page" />
+        </section>
+        <section>
+            <nuxt-link to="/docs">←戻る</nuxt-link>
+        </section>
+    </article>
+    <article class="docsArticle" v-else>
+        <div class="flex flex-row items-center gap-4 mt-3">
+            <nuxt-link to="/docs" class="flex flex-row items-center"><span class="material-icons">arrow_back_ios</span>Docs</nuxt-link>
+            <span>/</span>
+            <span>???</span>
+        </div>
+        <Pagetitle>
+            <template #title>存在しない記事です。</template>
+            <template #desc>
+                <section class="text-left text-sm text-slate-500 flex flex-row items-center gap-2">
+                    <span class="mr-1">タグ:</span>
+                    <span class="rounded-full border-2 py-1 px-2">???</span>
+                </section>
+                <section class="text-left text-sm text-slate-500 flex flex-col">
+                    <span class="flex flex-row items-center"><span class="material-icons ml-auto mr-2">schedule</span>???</span>
+                    <span class="flex flex-row items-center mt-2"><span class="material-icons ml-auto mr-2">update</span>???</span>
+                </section>
+            </template>
+        </Pagetitle>
+        <section>
+            <section>
+                <p>ドーナツの穴は食べられません。</p>
+            </section>
         </section>
         <section>
             <nuxt-link to="/docs">←戻る</nuxt-link>
@@ -43,8 +71,9 @@ export default {
         }
     },
     head() {
+        let title = this.page.isPublished ? this.page.title : 'Not Found'
         return {
-            title: `${this.page.title} | むらさん`,
+            title: `${title} | むらさん`,
             meta: [
                 {
                     hid: 'og:title',
