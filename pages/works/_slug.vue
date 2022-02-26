@@ -95,14 +95,8 @@ export default {
     .pagetitle h1 {
         @apply mt-8;
     }
-    .nuxt-content {
-        line-height: 2;
-        a {
-            text-decoration: underline;
-        }
-        h4 {
-            @apply text-xl font-bold my-6;
-        }
+    p {
+        @apply break-all;
     }
     .linkItem {
         text-decoration: underline;
