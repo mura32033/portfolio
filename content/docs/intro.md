@@ -1,5 +1,6 @@
 ---
 title: intro
+isPublished: true
 ---
 
 ## Introduction

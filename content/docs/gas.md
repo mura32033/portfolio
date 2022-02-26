@@ -1,8 +1,7 @@
 ---
-title: gas
+title: Google Apps Script(GAS)とSpreadsheetを使ってランダムな時刻にメールを送信する
+isPublished: true
 ---
-
-# Google Apps Script(GAS)とSpreadsheetを使ってランダムな時刻にメールを送信する
 
 ## 準備するもの
 

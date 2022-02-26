@@ -1,5 +1,6 @@
 ---
 title: Hello
+isPublished: true
 ---
 
 Hello, world!
