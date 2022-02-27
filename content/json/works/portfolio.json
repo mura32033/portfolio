@@ -1,0 +1,45 @@
+{
+    "id": "portfolio",
+    "general": {
+      "title": "ポートフォリオ",
+      "shortDesc": "Nuxt.jsを使ってポートフォリオサイト（このサイト）を作りました。",
+      "thumbnail": null,
+      "tags": [
+        {
+          "name": "JavaScript",
+          "class": "js"
+        },
+        {
+          "name": "Vue",
+          "class": "vue"
+        },
+        {
+          "name": "Nuxt",
+          "class": "nuxt"
+        }
+      ]
+    },
+    "desc": [
+      {
+        "header": null,
+        "content": "CMS(Content Management System)であるmodxを使ったポートフォリオサイトを、大学卒業のタイミングで新しく一から作り直しました。Nuxt.jsを採用したことに深い理由はありませんが、Vue(Nuxt)を使ってポートフォリオサイトを作りたいという思いがずっとありました。"
+      },
+      {
+        "header": "使用技術",
+        "content": "Nuxt.js(Vue.js)を使用しました。CSSフレームワークはTailwind CSSを採用しました。'Docs'内の記事は、@nuxt/contentを使ってmd/jsonファイルを管理しています。"
+      }
+    ],
+    "img": [
+      {
+        "src": null,
+        "alt": null
+      }
+    ],
+    "link": [
+      {
+        "url": "/",
+        "text": "ポートフォリオサイト",
+        "type": "link"
+      }
+    ]
+  }
