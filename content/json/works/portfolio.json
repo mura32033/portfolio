@@ -29,12 +29,7 @@
         "content": "Nuxt.js(Vue.js)を使用しました。CSSフレームワークはTailwind CSSを採用しました。'Docs'内の記事は、@nuxt/contentを使ってmd/jsonファイルを管理しています。"
       }
     ],
-    "img": [
-      {
-        "src": null,
-        "alt": null
-      }
-    ],
+    "img": null,
     "link": [
       {
         "url": "/",
