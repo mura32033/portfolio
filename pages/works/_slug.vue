@@ -14,7 +14,6 @@
                 </section>
                 <section class="text-left text-sm text-slate-500 flex flex-col">
                     <span class="flex flex-row items-center"><span class="material-icons ml-auto mr-2">schedule</span>{{ formatDate(page.createdAt) }}</span>
-                    <span class="flex flex-row items-center mt-2"><span class="material-icons ml-auto mr-2">update</span>{{ formatDate(page.updatedAt) }}</span>
                 </section>
             </template>
         </Pagetitle>
