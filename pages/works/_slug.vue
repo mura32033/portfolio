@@ -89,16 +89,13 @@ export default {
 <style lang="scss">
 .docsArticle {
     a.linkItem {
-        @apply flex flex-row items-center gap-2;
+        @apply flex flex-row items-center gap-2 hover:border-b-2 hover:border-b-teal-600;
     }
     .pagetitle h1 {
         @apply mt-8;
     }
     p {
         @apply break-all;
-    }
-    .linkItem {
-        text-decoration: underline;
     }
     .VueCarousel{
         @apply shadow;
