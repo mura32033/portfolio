@@ -39,13 +39,13 @@ header {
         @apply mb-12 last:mb-0;
     }
     h1 {
-        @apply text-5xl font-bold;
+        @apply text-5xl font-bold leading-normal;
     }
     h2 {
-        @apply text-4xl font-bold my-8;
+        @apply text-4xl font-bold my-8 leading-normal;
     }
     h3 {
-        @apply text-2xl font-bold my-6;
+        @apply text-2xl font-bold my-6 leading-normal;
     }
 }
 .footer {
