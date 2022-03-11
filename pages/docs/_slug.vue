@@ -99,11 +99,29 @@ export default {
     }
     .nuxt-content {
         line-height: 2;
+        p {
+            @apply mb-4;
+            &:last-child {
+                @apply mb-0;
+            }
+        }
         a {
             text-decoration: underline;
         }
         h4 {
             @apply text-xl font-bold my-6;
+        }
+        ul {
+            @apply my-8 ml-8 list-disc;
+        }
+        table {
+            @apply table-auto w-full;
+            th {
+                @apply border-b-2 border-b-slate-400 px-4 py-2 text-gray-800 bg-slate-100;
+            }
+            td {
+                @apply border-b border-b-slate-400 px-4 py-1;
+            }
         }
     }
 }
