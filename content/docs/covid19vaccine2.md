@@ -3,9 +3,9 @@ title: 新型コロナウイルスワクチン2回目の記録
 isPublished: true
 ---
 
-[1回目の記録](./covid19vaccine1)
+[1回目の記録](covid19vaccine1)
 
-[3回目の記録](./covid19vaccine3)
+[3回目の記録](covid19vaccine3)
 
 ---
 
