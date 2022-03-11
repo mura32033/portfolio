@@ -35,7 +35,6 @@
                 </section>
                 <section class="text-left text-sm text-slate-500 flex flex-col">
                     <span class="flex flex-row items-center"><span class="material-icons ml-auto mr-2">schedule</span>???</span>
-                    <span class="flex flex-row items-center mt-2"><span class="material-icons ml-auto mr-2">update</span>???</span>
                 </section>
             </template>
         </Pagetitle>
