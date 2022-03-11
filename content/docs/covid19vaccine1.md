@@ -3,12 +3,6 @@ title: 新型コロナウイルスワクチン1回目の記録
 isPublished: false
 ---
 
-[2回目の記録](./covid19vaccine2)
-
-[3回目の記録](./covid19vaccine3)
-
----
-
 ## 情報
 
 - 2021年8月31日16時30分くらい
