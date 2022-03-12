@@ -121,6 +121,9 @@ export default {
             }
             td {
                 @apply border-b border-b-slate-400 px-4 py-1;
+                &:last-child {
+                    @apply border-b-2;
+                }
             }
         }
     }
