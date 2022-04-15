@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link :to="'works/' + item.slug">
+    <nuxt-link :to="'/works/' + item.slug">
         <div class="cardContent">
             <div class="cardInfo">
                 <h3>{{item.general.title}}</h3>
