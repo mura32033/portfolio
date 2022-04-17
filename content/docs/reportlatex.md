@@ -13,7 +13,7 @@ isPublished: true
 
 用意したTeXファイルによって次の情報を含むPDFを出力させる。
 
-![想定するPDF](~/../../../assets/myreportlatexpdf.png)
+![想定するPDF](~/../../../assets/img/docs/myreportlatexpdf.png)
 
 ## TeXファイル
 
