@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['NotoSans', 'sans-serif']
+        sans: ['Kiwi Maru', 'sans-serif']
       }
     },
   },
