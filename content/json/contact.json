@@ -1,11 +1,21 @@
 {
-    "mail": null,
-    "twitter": null,
-    "github": {
-        "title": "GitHub",
-        "content": {
-            "type": "link",
-            "url" : "https://github.com/mura32033"
+    "contact": {
+        "mail": null,
+        "twitter": null,
+        "github": {
+            "title": "GitHub",
+            "content": {
+                "type": "link",
+                "url" : "https://github.com/mura32033"
+            }
+        },
+        "mastdon": {
+            "title": "Mastodon",
+            "content": {
+                "type": "link",
+                "url": "https://mstdn.jp/@murasannuun",
+                "rel": "me"
+            }
         }
     }
 }
