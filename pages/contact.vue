@@ -3,7 +3,11 @@
         <Pagetitle>
             <template #title>Contact</template>
         </Pagetitle>
-        <Infodesc :data="data.github" />
+        <template v-for="d in data.contact">
+            <template v-if="d != null">
+                <Infodesc :data="d" :key="d.title" />
+            </template>
+        </template>
     </div>
 </template>
 
