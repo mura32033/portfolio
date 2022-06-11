@@ -39,6 +39,14 @@
             {
                 "title": "TOEIC(公開; L&R)スコア940",
                 "content": "2020年12月取得"
+            },
+            {
+                "title": "普通自動車第一種運転免許",
+                "content": "2021年7月取得"
+            },
+            {
+                "title": "ITパスポート",
+                "content": "取得予定"
             }
         ],
         "skill": [
@@ -76,6 +84,16 @@
                 "title": "Python",
                 "level": 1,
                 "content": "勉強途中です。"
+            },
+            {
+                "title": "SAS",
+                "level": 2,
+                "content": "統計処理を書籍等を見ながらできます。研究の解析で用いました。"
+            },
+            {
+                "title": "MATLAB",
+                "level": 1,
+                "content": "指導教官に勧められて少しずつ勉強しています。"
             }
         ]
     },
