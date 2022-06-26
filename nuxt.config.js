@@ -50,7 +50,7 @@ export default {
   ],
 
   content: {
-
+    nestedProperties: ['general.tags.name']
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

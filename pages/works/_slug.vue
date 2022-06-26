@@ -10,7 +10,7 @@
             <template #desc>
                 <section class="text-left text-sm text-slate-500 flex flex-row items-center gap-2">
                     <span class="mr-1">タグ:</span>
-                    <span class="rounded-full border-2 py-1 px-2" v-for="(t, index) in page.general.tags" :key="'tag' + index" :class="t.class">{{ t.name }}</span>
+                    <nuxt-link class="rounded-full border-2 py-1 px-2" v-for="(t, index) in page.general.tags" :key="'tag' + index" :class="t.class" :to="'./tags/' + t.name">{{ t.name }}</nuxt-link>
                 </section>
                 <section class="text-left text-sm text-slate-500 flex flex-col">
                     <span class="flex flex-row items-center"><span class="material-icons ml-auto mr-2">schedule</span>{{ formatDate(page.createdAt) }}</span>
