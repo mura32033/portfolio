@@ -10,6 +10,13 @@
           </div>
         </div>
     </section>
+    <section>
+      <h2 id="policy">ポリシー</h2>
+      <p><a href="https://portfolio.mura32033.com" class="linkItem">ポートフォリオサイト</a>ならびにmura32033.com下で公開している一部制作物(以下、本サイト)では、Google社提供のアクセス解析ツールであるGoogle Analyticsを利用しており、データ収集のためにCookieを使用しています。</p>
+      <p>本サイトを利用することにより上記に同意したものとみなします。</p>
+      <br>
+      <p>詳細は、<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" class="linkItem">Google アナリティクス利用規約</a>・<a href="https://policies.google.com/technologies/partner-sites?hl=ja" class="linkItem">GOOGLE のサービスを使用するサイトやアプリから収集した情報の GOOGLE による使用</a>をご覧ください。</p>
+    </section>
   </div>
 </template>
 
