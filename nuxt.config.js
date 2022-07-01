@@ -31,7 +31,8 @@ export default {
   plugins: [
     {src: '@/plugins/vue-scrollto.js'},
     {src: '@/plugins/vue-js-modal.js', mode: 'client'},
-    {src: '@/plugins/vue-carousel', ssr: false}
+    {src: '@/plugins/vue-carousel', ssr: false},
+    {src: '@/plugins/devicon.js'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,7 +40,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -48,6 +50,16 @@ export default {
     '@nuxtjs/axios',
     '@nuxt/content'
   ],
+
+  googleAnalytics: {
+    id: process.env.NUXT_GOOGLE_ANALYTICS_ID
+  },
+
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.NUXT_GOOGLE_ANALYTICS_ID
+    }
+  },
 
   content: {
     nestedProperties: ['general.tags.name']
@@ -60,7 +72,8 @@ export default {
         tailwindcss: {},
         autoprefixer: {}
       }
-    }
+    },
+    transpile: ['devicon']
   },
 
   generate: {
