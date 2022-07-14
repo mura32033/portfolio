@@ -34,10 +34,10 @@
                         </slide>
                     </carousel>
             </div>
-            <section class="flex flex-row items-center gap-8" v-if="page.link">
+            <section class="flex flex-row items-center gap-8 mt-4" v-if="page.link">
                 <span class="-mr-6 self-start">関連リンク:</span>
                 <div class="flex flex-col">
-                    <a v-for="(l, index) in page.link" :key="'link' + index" class="linkItem" :href="l.url"><span v-if="l.type == 'link'" class="material-icons">link</span>{{l.text}}</a>
+                    <a v-for="(l, index) in page.link" :key="'link' + index" class="linkItem mb-2 last:mb-0" :href="l.url"><span class="material-icons">link</span>{{l.text}}</a>
                 </div>
             </section>
         </section>
@@ -89,7 +89,7 @@ export default {
 <style lang="scss">
 .docsArticle {
     a.linkItem {
-        @apply flex flex-row items-center gap-2 hover:border-b-2 hover:border-b-teal-600;
+        @apply flex flex-row items-center gap-2 border-b-2 border-transparent hover:border-b-teal-600;
     }
     .pagetitle h1 {
         @apply mt-8;
