@@ -46,8 +46,8 @@ export default {
         @apply flex flex-col mt-6 md:mt-0;
       }
     }
-    a.linkItem {
-        @apply flex flex-row items-center gap-2 hover:border-b-2 hover:border-b-teal-600;
+    .linkItem {
+        text-decoration: underline;
     }
   }
 }

@@ -76,9 +76,6 @@ export default {
     display: flex;
     flex-direction: row;
 }
-.linkItem {
-    text-decoration: underline;
-}
 .VueCarousel-wrapper {
     height: 500px;
     .VueCarousel-inner {
