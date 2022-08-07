@@ -51,6 +51,10 @@ export default {
     '@nuxt/content'
   ],
 
+  env: {
+    NUXT_GOOGLE_ANALYTICS_ID: process.env.NUXT_GOOGLE_ANALYTICS_ID
+  },
+
   googleAnalytics: {
     id: process.env.NUXT_GOOGLE_ANALYTICS_ID
   },
