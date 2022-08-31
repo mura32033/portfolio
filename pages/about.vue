@@ -16,7 +16,12 @@
                 <Skill v-for="(s, index) in about.skill.skill" :key="index" :data="s" />
             </div>
         </section>
-
+        <section>
+            <h2>Publication</h2>
+            <div class="publicationCardGroup">
+                <Publication v-for="(u, index) in about.publication" :key="index" :data="u" />
+            </div>
+        </section>
         <section>
             <h2>受賞歴</h2>
             <div class="awardCardGroup">
@@ -51,13 +56,13 @@ export default {
 </script>
 
 <style lang="scss">
-.skillCardGroup, .awardCardGroup, .certificateCardGroup, .presentCardGroup{
+.skillCardGroup, .awardCardGroup, .certificateCardGroup, .presentCardGroup, .publicationCardGroup{
     @apply grid gap-4 grid-cols-1;
 }
 .skillCardGroup {
     @apply md:grid-cols-4;
 }
-.awardCardGroup, .presentCardGroup {
+.awardCardGroup, .presentCardGroup, .publicationCardGroup {
     @apply md:grid-cols-2;
 }
 .certificateCardGroup {

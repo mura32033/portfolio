@@ -18,6 +18,16 @@
             }
         }
     ],
+    "publication": [
+        {
+            "title": "In preparation...",
+            "detail": {
+                "date": "Published date comes here",
+                "publisher": "Publisher name comes here",
+                "isFirstAuthor": false
+            }
+        }
+    ],
     "skill": {
         "certificate": [
             {
