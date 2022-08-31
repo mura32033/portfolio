@@ -1,6 +1,6 @@
 <template>
 <div class="card skillCard">
-    <div class="skillTitle">{{data.title}}</div>
+    <div class="skillTitle"><i :class="data.icon ? data.icon + ' colored' : ''" :title="data.title"></i>{{data.icon ? '' : data.title}}</div>
     <div class="skillValue">
         <svg class="skillRing" :height="size * 2" :width="size * 2">
             <circle
@@ -60,6 +60,9 @@ export default {
 
 <style lang="scss">
 .skillCard {
+    i {
+        @apply text-4xl;
+    }
     .skillTitle {
         @apply text-2xl font-bold font-mono tracking-wider;
     }
@@ -69,6 +72,7 @@ export default {
     .skillContent {
         @apply my-auto;
     }
+    @apply relative;
 }
 .outerRing {
     @apply stroke-slate-200;
