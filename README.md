@@ -5,3 +5,9 @@
 [ポートフォリオサイト](https://portfolio.mura32033.com)
 
 My portfolio site build with Nuxt.js + Netlify.
+
+Tailwind CSS is used for styling.
+
+Nuxt Content is also used to convert .md files to HTML and make .json files easier to use.
+
+Devicon, Material Icons and Kiwi Maru(Google Fonts) are used to improve apperance.
