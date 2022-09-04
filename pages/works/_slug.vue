@@ -37,7 +37,7 @@
             <section class="flex flex-row items-center gap-8 mt-4" v-if="page.link">
                 <span class="-mr-6 self-start">関連リンク:</span>
                 <div class="flex flex-col">
-                    <a v-for="(l, index) in page.link" :key="'link' + index" class="linkItem mb-2 last:mb-0" :href="l.url"><span class="material-icons">link</span>{{l.text}}</a>
+                    <a v-for="(l, index) in page.link" :key="'link' + index" class="linkItem mb-2 last:mb-0" :href="l.url"><span v-if="l.type != 'github'" class="material-icons">link</span><span v-else>GitHub - </span>{{l.text}}</a>
                 </div>
             </section>
         </section>
