@@ -1,7 +1,13 @@
 {
     "contact": {
         "mail": null,
-        "twitter": null,
+        "twitter": {
+            "title": "Twitter",
+            "content": {
+                "type": "link",
+                "url": "https://twitter.com/murasan_tech"
+            }
+        },
         "github": {
             "title": "GitHub",
             "content": {
