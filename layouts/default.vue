@@ -1,10 +1,15 @@
 <template>
-<div class="default">
+<div :class="dark + ' default'">
     <header>
         <div class="logo">
             <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
         </div>
         <Navmenu />
+        <div class="toggle">
+            <button @click="toggleTheme">
+                <font-awesome-icon icon="fas fa-moon" />
+            </button>
+        </div>
     </header>
     <transition name="move">
         <Nuxt class="content" />
@@ -17,9 +22,31 @@
 </div>
 </template>
 
+<script>
+    export default {
+        data () {
+            return {
+                isDark: false,
+                dark: ""
+            }
+        },
+        methods: {
+            toggleTheme() {
+                if (this.isDark) {
+                    this.isDark = false;
+                    this.dark = "";
+                } else {
+                    this.isDark = true;
+                    this.dark = "dark";
+                }
+            }
+        }
+    }
+</script>
+
 <style lang="scss">
 .default {
-    @apply flex flex-col min-h-screen;
+    @apply flex flex-col min-h-screen dark:bg-gray-900 dark:text-white;
 }
 header {
     @apply flex flex-col items-center;

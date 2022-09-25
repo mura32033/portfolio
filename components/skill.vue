@@ -25,7 +25,7 @@
             />
             <!-- r = (width / 2) - (stroke-width * 2) -->
         </svg>
-        <span class="absolute text-2xl text-teal-900 font-mono font-bold">{{data.level}}</span>
+        <span class="absolute text-2xl text-teal-900 dark:text-white font-mono font-bold">{{data.level}}</span>
     </div>
     <div class="skillContent">{{data.content}}</div>
 </div>
@@ -75,10 +75,10 @@ export default {
     @apply relative;
 }
 .outerRing {
-    @apply stroke-slate-200;
+    @apply stroke-slate-200 dark:stroke-gray-700;
 }
 .ring{
-    @apply stroke-teal-600;
+    @apply stroke-teal-600 dark:stroke-teal-400;
     transition: stroke-dashoffset .5s;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;

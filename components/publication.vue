@@ -26,7 +26,7 @@ export default {
         @apply mt-2 my-auto;
     }
     .publicationDetail {
-        @apply text-slate-500 text-sm text-right mt-4 ml-auto;
+        @apply text-slate-500 dark:text-white text-sm text-right mt-4 ml-auto;
         span {
             @apply block;
         }
