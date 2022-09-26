@@ -1,6 +1,6 @@
 <template>
 <div :class="dark ? 'dark' : 'light'">
-    <div class="bg-white dark:text-white dark:bg-gray-900">
+    <div class="flex flex-col min-h-screen bg-white dark:text-white dark:bg-gray-900">
         <header>
             <div class="logo">
                 <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
