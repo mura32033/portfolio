@@ -77,7 +77,8 @@ export default {
     postcss: {
       plugins: {
         tailwindcss: {},
-        autoprefixer: {}
+        autoprefixer: {},
+        "postcss-custom-properties": false
       }
     },
     transpile: ['devicon']
