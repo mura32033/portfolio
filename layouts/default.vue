@@ -1,26 +1,58 @@
 <template>
-<div class="default">
-    <header>
-        <div class="logo">
-            <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
+<div :class="dark ? 'dark' : 'light'">
+    <div class="flex flex-col min-h-screen bg-white dark:text-white dark:bg-gray-900">
+        <header>
+            <div class="logo">
+                <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
+            </div>
+            <Navmenu />
+            <div class="toggle">
+                <button @click="toggleTheme">
+                    <font-awesome-icon icon="fas fa-moon" />
+                </button>
+            </div>
+        </header>
+        <transition name="move">
+            <Nuxt class="content" />
+        </transition>
+        <div class="footer">
+            <footer>
+                <span>2022 murasan.</span>
+            </footer>
         </div>
-        <Navmenu />
-    </header>
-    <transition name="move">
-        <Nuxt class="content" />
-    </transition>
-    <div class="footer">
-        <footer>
-            <span>2022 murasan.</span>
-        </footer>
     </div>
 </div>
 </template>
 
+<script>
+    import { mapGetters, mapMutations } from 'vuex'
+
+    export default {
+        computed: {
+            ...mapGetters(['dark'])
+        },
+        methods: {
+            ...mapMutations(['setDark']),
+            toggleTheme() {
+                this.setDark(!this.dark)
+            }
+        },
+        mounted () {
+            if (localStorage.theme === undefined) {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    localStorage.theme = 'dark'
+                    this.setDark(true)
+                } else {
+                    localStorage.theme = 'light'
+                }
+            } else {
+                this.setDark(localStorage.theme === 'dark')
+            }
+        }
+    }
+</script>
+
 <style lang="scss">
-.default {
-    @apply flex flex-col min-h-screen;
-}
 header {
     @apply flex flex-col items-center;
     h1 {

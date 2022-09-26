@@ -40,6 +40,6 @@ export default {
     @apply grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between;
 }
 .worksCard {
-    @apply flex flex-row bg-center bg-contain bg-no-repeat bg-[rgba(255,255,255,.9)] bg-blend-lighten rounded-lg h-full m-auto p-2 w-full hover:shadow-md;
+    @apply flex flex-row bg-center bg-contain bg-no-repeat bg-[rgba(255,255,255,.9)] bg-blend-lighten dark:text-gray-900 rounded-lg h-full m-auto p-2 w-full hover:shadow-md;
 }
 </style>

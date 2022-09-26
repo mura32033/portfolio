@@ -8,7 +8,7 @@
         <Pagetitle>
             <template #title>{{ page.title }}</template>
             <template #desc>
-                <section class="text-left text-sm text-slate-500 flex flex-col">
+                <section class="text-left text-sm text-slate-500 dark:text-white flex flex-col">
                     <span class="flex flex-row items-center"><span class="material-icons ml-auto mr-2">schedule</span>{{ formatDate(page.updatedAt) }}</span>
                 </section>
             </template>
