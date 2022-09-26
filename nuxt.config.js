@@ -50,7 +50,8 @@ export default {
   modules: [
     'nuxt-content-git',
     '@nuxtjs/axios',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss'
   ],
 
   env: {

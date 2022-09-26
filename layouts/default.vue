@@ -1,53 +1,58 @@
 <template>
-<div :class="dark + ' default'">
-    <header>
-        <div class="logo">
-            <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
+<div :class="dark ? 'dark' : 'light'">
+    <div class="bg-white dark:text-white dark:bg-gray-900">
+        <header>
+            <div class="logo">
+                <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
+            </div>
+            <Navmenu />
+            <div class="toggle">
+                <button @click="toggleTheme">
+                    <font-awesome-icon icon="fas fa-moon" />
+                </button>
+            </div>
+        </header>
+        <transition name="move">
+            <Nuxt class="content" />
+        </transition>
+        <div class="footer">
+            <footer>
+                <span>2022 murasan.</span>
+            </footer>
         </div>
-        <Navmenu />
-        <div class="toggle">
-            <button @click="toggleTheme">
-                <font-awesome-icon icon="fas fa-moon" />
-            </button>
-        </div>
-    </header>
-    <transition name="move">
-        <Nuxt class="content" />
-    </transition>
-    <div class="footer">
-        <footer>
-            <span>2022 murasan.</span>
-        </footer>
     </div>
 </div>
 </template>
 
 <script>
+    import { mapGetters, mapMutations } from 'vuex'
+
     export default {
-        data () {
-            return {
-                isDark: false,
-                dark: ""
-            }
+        computed: {
+            ...mapGetters(['dark'])
         },
         methods: {
+            ...mapMutations(['setDark']),
             toggleTheme() {
-                if (this.isDark) {
-                    this.isDark = false;
-                    this.dark = "";
+                this.setDark(!this.dark)
+            }
+        },
+        mounted () {
+            if (localStorage.theme === undefined) {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    localStorage.theme = 'dark'
+                    this.setDark(true)
                 } else {
-                    this.isDark = true;
-                    this.dark = "dark";
+                    localStorage.theme = 'light'
                 }
+            } else {
+                this.setDark(localStorage.theme === 'dark')
             }
         }
     }
 </script>
 
 <style lang="scss">
-.default {
-    @apply flex flex-col min-h-screen dark:bg-gray-900 dark:text-white;
-}
 header {
     @apply flex flex-col items-center;
     h1 {
