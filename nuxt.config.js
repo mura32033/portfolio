@@ -34,7 +34,8 @@ export default {
     {src: '@/plugins/vue-js-modal.js', mode: 'client'},
     {src: '@/plugins/vue-carousel', ssr: false},
     '@/plugins/devicon.js',
-    '@/plugins/fontawesome.js'
+    '@/plugins/fontawesome.js',
+    '~/plugins/vue-youtube'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -69,7 +70,12 @@ export default {
   },
 
   content: {
-    nestedProperties: ['general.tags.name']
+    nestedProperties: ['general.tags.name'],
+    markdown: {
+      remarkPlugins: [
+        'remark-emoji'
+      ]
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
