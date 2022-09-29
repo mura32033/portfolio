@@ -1,6 +1,6 @@
 ---
 title: 自分音楽史 - 2022年版
-isPublished: false
+isPublished: true
 ---
 
 3年前に[Note](https://note.com/mura32033/n/n498c3a87a909)で書いたものをアップデートしてここに残すことにしました。
@@ -75,6 +75,30 @@ Brian the Sunはメジャーデビュー直前に見つけた気がします。
 周りの人が聴いてるので**Official髭男dism**を聴くようになります。
 関連かなんかで**Nulbarich**に出会います。
 
-## ラウドロック、そしてメタルコアへ。ときどき懐メロ
+大学3年になると**YOASOBI**や**ずっと真夜中でいいのに。**、**ヨルシカ**、**yama**をほぼ同時に認識しました。
+特に、ずとまよは音がとても好みです。
+この時期に**Saucy Dog**を知ったと思います。FCにも入って今でも聴いてます。
+数年前に知った**04 Limited Sazabys**の良さを再認識したり(前に聴いたときはあまり刺さらなかった)、アニメPSYCHO-PASSを観て**Nothing's Carved In Stone**を好きになったりしました。
 
-洋ロックの波
+## ラウドロック、そしてメタルコアへ
+
+大学3年から4年にかけてラウドロック(これは日本独自のカテゴリらしい)にハマりだします。
+まずは、**Fear, and Loathing in Las Vegas**から始まり、**Survive Said The Prophet**、**coldrain**、**noisemaker**と続きました。
+ベガスとの出会いが音楽嗜好性の大きな変換点になった気がします。
+そこから歴史を遡るように**Pay money To my Pain**、**FACT**を聴くようになりました。
+この2つはもっと早く知っていたかったバンドです。
+また、この辺でなぜか**MY FIRST STORY**にドはまりしました。
+前から名前は聞いていたので存在は知っていましたが、なぜか曲を聴いてこなかったので聴き始めました。
+案の定ドハマりです。
+
+coldrainからは海外バンドの開拓が始まりました。
+**Linkin Park**、**My Chemicals Romance**、**Suasion**、**Escape The Fate**、**Deaf Havana**、**Black Veil Brides**、**Asking Alexandria**、**Bring Me The Horizon**、**Electric Callboy(Eskimo Callboy)**、**Architects**、**The Amity Affliction**などなどいろいろなバンドに出会い一気に世界が広がりました。
+
+並行して、邦ロックでもそれまで何となく避けていた、結構メタルよりでラウドロック沼に入りたてのときには好みではなかった**SiM**とか**Crossfaith**あたりを聴くようになりました。
+どこで知ったのか覚えていませんが、大阪の**Xmas Eileen**も好きです。この人たちもお面かぶっているのでFACTからの繋がりかもしれないなと思っていますが...
+
+## とりあえず一旦まとめ
+
+今のところかなりメタルコアバンドにハマっています。
+自分でも何が好きで何が好きじゃないのかよくわかっていません。
+だからこそ新しいアーティストを発掘するのがとても楽しいです。
