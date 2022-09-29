@@ -6,7 +6,7 @@
                 <h1><NuxtLink to="/" exact-active-class="" exact>むらさん</NuxtLink></h1>
             </div>
             <Navmenu />
-            <div class="toggle">
+            <div class="text-2xl toggle absolute top-4 right-4 md:top-12 md:right-16" :class="dark ? 'text-gray-100' : 'text-gray-900'">
                 <button @click="toggleTheme">
                     <font-awesome-icon icon="fas fa-moon" />
                 </button>
