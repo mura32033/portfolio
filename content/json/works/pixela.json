@@ -1,0 +1,49 @@
+{
+  "id": "pixela",
+  "general": {
+    "title": "Nuxt 3とPixelaを使って作業時間を表示",
+    "shortDesc": "Nuxt 3と作業時間をAPIで記録・取得するPixelaを使って作業時間を表示するアプリを作りました。",
+    "thumbnail": null,
+    "tags": [
+      {
+        "name": "JavaScript",
+        "class": "js"
+      },
+      {
+        "name": "Vue",
+        "class": "vue"
+      },
+      {
+        "name": "Nuxt",
+        "class": "nuxt"
+      },
+      {
+        "name": "Pixela",
+        "class": "pixela"
+      }
+    ]
+  },
+  "desc": [
+    {
+      "header": null,
+      "content": "Nuxt 3(Vue 3)を使ってみました。これまでのVue/Nuxtとは仕様が大きく異なるところがあったので、その点について調べながら進めていきました。PixelaはAPIで作業時間を記録・取得できるサービスです。これを使って作業時間を表示するアプリを作りました。"
+    },
+    {
+      "header": "使用技術",
+      "content": "Nuxt.js(Vue)を使用しました。CSSフレームワークはTailwind CSSを採用しました。近未来的なデジタルらしいデザインを意識してみました。作業時間の記録にはAPIを介して操作を行うPixelaを採用しました。デプロイ先にはNetlifyを使用しました。"
+    }
+  ],
+  "img": null,
+  "link": [
+    {
+      "url": "https://spontaneous-otter-9304a2.netlify.app/",
+      "text": "my worktime",
+      "type": "link"
+    },
+    {
+      "url": "https://github.com/mura32033/pixela-worktime",
+      "text": "GitHub",
+      "type": "github"
+    }
+  ]
+}
