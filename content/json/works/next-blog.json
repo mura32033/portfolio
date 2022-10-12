@@ -1,0 +1,45 @@
+{
+  "id": "next-blog",
+  "general": {
+    "title": "Next.jsとmicroCMSを使ったブログ",
+    "shortDesc": "Next.jsとmicroCMSを使ってブログサイトを作成しました。",
+    "thumbnail": null,
+    "tags": [
+      {
+        "name": "JavaScript",
+        "class": "js"
+      },
+      {
+        "name": "React",
+        "class": "react"
+      },
+      {
+        "name": "Next",
+        "class": "next"
+      }
+    ]
+  },
+  "desc": [
+    {
+      "header": null,
+      "content": "これまでVue(Nuxt.js)を使っていくつかのアプリを作成していましたが、React(Next.js)を使ってブログを作成してみました。Vueに慣れていたため、Reactの書き方には戸惑いましたが、Reactの書き方も慣れていくと楽しいです。"
+    },
+    {
+      "header": "使用技術",
+      "content": "Next.js(React)を使用しました。CSSフレームワークはTailwind CSSを採用しました。ブログ記事の管理には、ReactにおけるAPIの呼び出しを体験するためにmicroCMSを使用しました。デプロイ先にはNext.jsの開発元であるVercelを使用しました。"
+    }
+  ],
+  "img": null,
+  "link": [
+    {
+      "url": "https://next-blog-mura32033.vercel.app/",
+      "text": "murasan blog",
+      "type": "link"
+    },
+    {
+      "url": "https://github.com/mura32033/next-blog",
+      "text": "GitHub",
+      "type": "github"
+    }
+  ]
+}
