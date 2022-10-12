@@ -73,8 +73,25 @@ export default {
     nestedProperties: ['general.tags.name'],
     markdown: {
       remarkPlugins: [
-        'remark-emoji'
-      ]
+        'remark-emoji',
+        [
+          'remark-autolink-headings',
+          {
+            behavior: "append",
+            content: {
+              type: "element",
+              tagName: "font-awesome-icon",
+              properties: {
+                icon: ["fa-solid", "fa-link"],
+              }
+            }
+          },
+          {
+            behavior: "append",
+            tagName: 'nuxt-link'
+          }
+        ]
+      ],
     }
   },
 
