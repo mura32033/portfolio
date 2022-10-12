@@ -8,11 +8,11 @@
         <Pagetitle>
             <template #title>{{ page.general.title }}</template>
             <template #desc>
-                <section class="text-left text-sm text-slate-500 flex flex-row items-center gap-2">
+                <section class="text-left text-sm text-gray-400 flex flex-row items-center gap-2">
                     <span class="mr-1">タグ:</span>
                     <nuxt-link class="rounded-full border-2 py-1 px-2" v-for="(t, index) in page.general.tags" :key="'tag' + index" :class="t.class" :to="'./tags/' + t.name">{{ t.name }}</nuxt-link>
                 </section>
-                <section class="text-left text-sm text-slate-500 flex flex-col">
+                <section class="text-left text-sm text-gray-400 flex flex-col">
                     <span class="flex flex-row items-center"><span class="material-icons ml-auto mr-2">schedule</span>{{ formatDate(page.createdAt) }}</span>
                 </section>
             </template>
@@ -34,10 +34,10 @@
                         </slide>
                     </carousel>
             </div>
+            <hr class="h-px bg-gray-400 border-0">
             <section class="flex flex-row items-center gap-8 mt-4" v-if="page.link">
-                <span class="-mr-6 self-start">関連リンク:</span>
                 <div class="flex flex-col">
-                    <a v-for="(l, index) in page.link" :key="'link' + index" class="linkItem mb-2 last:mb-0" :href="l.url"><span v-if="l.type != 'github'" class="material-icons">link</span><span v-else>GitHub - </span>{{l.text}}</a>
+                    <a v-for="(l, index) in page.link" :key="'link' + index" class="linkItem mb-2 last:mb-0" :href="l.url"><span v-if="l.type != 'github'" class="material-icons text-2xl">link</span><i v-else class="devicon-github-original text-2xl"></i>{{l.text}}</a>
                 </div>
             </section>
         </section>
