@@ -17,16 +17,16 @@ export default {
 
 <style lang="scss">
 .infoDesc {
-    @apply flex flex-row items-center mb-2 last:mb-0;
+    @apply grid grid-cols-7 mb-2 last:mb-0 items-center;
     dt, dd {
         @apply rounded;
     }
     dt {
-        @apply py-2 px-4 bg-teal-600 text-white;
+        @apply col-start-1 col-end-2 py-2 px-4 bg-teal-600 text-white text-center;
         word-break: keep-all;
     }
     dd {
-        @apply ml-4
+        @apply col-start-2 col-end-9 ml-4
     }
 }
 </style>
