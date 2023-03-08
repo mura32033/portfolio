@@ -12,7 +12,10 @@
             <p>カードをクリックすると詳細をご確認いただけます。</p>
         </template>
     </Pagetitle>
-    <section class="worksItemsGroup">
+    <template v-if="page.length === 0">
+        <p class="text-xl"><b>{{ $route.params.slug }}</b> を使ってまだ何も作っていません。</p>
+    </template>
+    <section class="worksItemsGroup" v-else>
         <template v-for="p in page">
             <work-item v-if="p.general.thumbnail" :key="p.slug"
             class="worksCard"
@@ -46,6 +49,6 @@ export default {
     @apply grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between;
 }
 .worksCard {
-    @apply flex flex-row bg-center bg-contain bg-no-repeat bg-[rgba(255,255,255,.9)] bg-blend-lighten rounded-lg h-full m-auto p-2 w-full hover:shadow-md;
+    @apply flex flex-row bg-center bg-contain bg-no-repeat bg-[rgba(255,255,255,.9)] bg-blend-lighten dark:text-gray-900 rounded-lg h-full m-auto p-2 w-full hover:shadow-md;
 }
 </style>
